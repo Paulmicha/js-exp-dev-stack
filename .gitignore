@@ -1,0 +1,29 @@
+
+##
+# Current project instance uses Common Web Tools (CWT).
+#
+# See https://github.com/Paulmicha/common-web-tools/
+#
+
+# Public web dir (or application docroot).
+# See $APP_DOCROOT global var.
+/web
+
+# Local environment variables.
+/cwt/env/current/*
+!/cwt/env/current/README.md
+
+# DB dumps dir.
+# @see cwt/extensions/db
+/dumps
+
+# Docker-compose env file.
+# @see cwt/extensions/docker-compose
+/.env
+
+# Misc.
+docker-runtime
+.idea
+*.sql
+.DS_Store
+._*
