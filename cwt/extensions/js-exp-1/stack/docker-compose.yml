@@ -1,0 +1,14 @@
+version: "3.6"
+
+services:
+  web:
+    build:
+      context: ./cwt/extensions/js-exp-1/stack/nodejs
+      args:
+        - NODE_SRC=$APP_DOCROOT
+        - NODE_ENV=$INSTANCE_TYPE
+    command: yarn run $INSTANCE_TYPE
+    ports:
+      - "80:8000"
+    volumes:
+      - "${APP_DOCROOT}:/app"
