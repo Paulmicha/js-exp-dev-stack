@@ -2,13 +2,17 @@ version: "3.6"
 
 services:
   web:
+    # image: node:$NODE_TAG
+    # working_dir: /app
+    # command: npm run $INSTANCE_TYPE
     build:
       context: ./cwt/extensions/js-exp-1/stack/nodejs
       args:
-        - NODE_SRC=$APP_DOCROOT
+        - NODE_TAG=$NODE_TAG
+        - NODE_SRC=./web
         - NODE_ENV=$INSTANCE_TYPE
     command: yarn run $INSTANCE_TYPE
     ports:
       - "80:8000"
     volumes:
-      - "${APP_DOCROOT}:/app"
+      - "./web:/app"

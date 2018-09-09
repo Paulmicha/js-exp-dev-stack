@@ -20,6 +20,7 @@
 # Docker-compose env file.
 # @see cwt/extensions/docker-compose
 /.env
+/docker-compose.yml
 
 # Misc.
 docker-runtime
