@@ -17,4 +17,4 @@ global DC_YML_VARIANTS "$INSTANCE_TYPE $HOST_TYPE"
 
 # @see cwt/extensions/js-exp-1/stack/nodejs/Dockerfile
 # @see cwt/extensions/js-exp-1/stack/docker-compose.yml
-global NODE_TAG '10.4-alpine'
+global NODE_TAG '10.10-alpine'

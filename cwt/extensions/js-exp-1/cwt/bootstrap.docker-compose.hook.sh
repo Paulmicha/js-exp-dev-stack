@@ -20,5 +20,5 @@ esac
 
 alias node="docker-compose run $T_flag web node"
 alias npm="docker-compose run $T_flag web npm"
-# alias yarn="docker-compose run $T_flag web yarn"
+alias yarn="docker-compose run $T_flag web yarn"
 # alias parcel="docker-compose run $T_flag web parcel"

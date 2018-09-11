@@ -11,7 +11,7 @@ services:
         - NODE_TAG=$NODE_TAG
         - NODE_SRC=./web
         - NODE_ENV=$INSTANCE_TYPE
-    command: npm run $INSTANCE_TYPE
+    command: yarn run $INSTANCE_TYPE
     ports:
       - "80:8000"
     volumes:
