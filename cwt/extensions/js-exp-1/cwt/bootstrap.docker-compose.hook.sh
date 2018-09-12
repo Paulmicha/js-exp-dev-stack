@@ -18,7 +18,7 @@ case $- in *i*)
   T_flag=''
 esac
 
-alias node="docker-compose run $T_flag web node"
-alias npm="docker-compose run $T_flag web npm"
-alias yarn="docker-compose run $T_flag web yarn"
-# alias parcel="docker-compose run $T_flag web parcel"
+alias node="docker-compose exec $T_flag web node"
+alias npm="docker-compose exec $T_flag web npm"
+alias npx="docker-compose exec $T_flag web npx"
+alias yarn="docker-compose exec $T_flag web yarn"

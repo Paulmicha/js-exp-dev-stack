@@ -11,8 +11,13 @@ services:
         - NODE_TAG=$NODE_TAG
         - NODE_SRC=./web
         - NODE_ENV=$INSTANCE_TYPE
-    command: yarn run $INSTANCE_TYPE
+    # TODO [wip] debug tooling : keep container running.
+    # See https://stackoverflow.com/questions/38546755/docker-compose-keep-container-running
+    # command: yarn run $INSTANCE_TYPE
+    command: tail -f /dev/null
     ports:
-      - "80:8000"
+      - "80:80"
+      - "1234:1234"
+      - "38081:38081"
     volumes:
       - "./web:/app"
