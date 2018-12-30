@@ -11,7 +11,7 @@
 # @see cwt/utilities/global.sh
 #
 
-# @see cwt/extensions/docker-compose/instance/bootstrap.docker-compose.hook.sh
+# @see cwt/extensions/docker-compose/cwt/bootstrap.docker-compose.hook.sh
 global DC_MODE 'generate'
 global DC_YML_VARIANTS "$INSTANCE_TYPE $HOST_TYPE"
 
